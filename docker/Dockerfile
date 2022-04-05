@@ -15,6 +15,9 @@ RUN yarn build
 
 # Production image, copy all the files and run next
 FROM node:14-alpine AS runner
+
+LABEL org.opencontainers.image.source https://github.com/mindsers/mindsers-live
+
 WORKDIR /app
 
 ENV NODE_ENV production
