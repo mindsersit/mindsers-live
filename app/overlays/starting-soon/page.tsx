@@ -1,7 +1,9 @@
+'use client';
+
 import { useEffect, useState } from "react"
 
 export default function StartingSoon() {
-  const target = new Date('2022/03/28 10:48')
+  const target = new Date('2023/02/21 14:35')
   const [now, setNowDate] = useState(new Date())
 
   const milliseconds = target.getTime() - now.getTime()
